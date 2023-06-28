@@ -1,0 +1,15 @@
+//@keyframes scala {
+//   from{ transform: scale(1)}
+//   to{transorm: scale(1.5);
+//   }}
+
+@mixin btn($colore) {
+   border-radius: 25px;
+   padding: 5px;
+   background-color: $colore;
+   border: 2px solid darken($colore, 20%);
+   color: invert($colore);
+   &:active{
+      background-color: darken($colore, 20%);
+      transform: scale(1.2);
+ }}

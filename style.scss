@@ -1,0 +1,77 @@
+@import "assets/css/partials/colors";
+@import "assets/css/partials/flex";
+@import "assets/css/partials/res";
+@import "assets/css/partials/buttons";
+@import "assets/css/partials/grid";
+
+h1 {
+  color: $button-color2;
+}
+
+nav {
+  background-color: lighten($bg-hero-color, 20%);
+  padding: 1%;
+  @include flex-config(row, center, center, unset);
+
+  img {
+    width: 100px;
+  }
+}
+
+ul {
+  padding-right: 2%;
+  list-style: none;
+  @include flex-config(row, space-evenly, center, unset);
+
+  li {
+    margin-right: 10%;
+
+    a {
+      color: $text-white;
+    }
+  }
+}
+
+.hero {
+  background-color: $bg-hero-color;
+  padding: 2%;
+  @include flex-config(row, space-evenly, center, unset);
+
+  img {
+    width: 40%;
+  }
+
+  div {
+    padding: 0.5% 1.5%;
+    color: $text-white;
+  }
+}
+
+section {
+  @include flex-config(row, space-evenly, center, unset);
+  background-color: lighten($bg-hero-color, 25%);
+  padding: 1%;
+
+  .btn-1 {
+    @include btn($button-color1);
+  }
+
+  .btn-2 {
+    @include btn($button-color2);
+  }
+
+  .btn-3 {
+    @include btn($button-color3);
+  }
+}
+
+.grid {
+  @include grid-config(2, 0);
+  padding:  5% 10%;
+
+  img {
+    width: 100%;
+  }
+}
+
+
