@@ -1,15 +1,25 @@
-//@keyframes scala {
-//   from{ transform: scale(1)}
-//   to{transorm: scale(1.5);
-//   }}
+//@mixin btn($colore) {
+//   border-radius: 25px;
+//   padding: 5px;
+//   background-color: $colore;
+//   border: 2px solid darken($colore, 20%);
+//   color: invert($colore);
+//   &:active{
+//      background-color: darken($colore, 20%);
+//      transform: scale(1.2);
+// }}
+$colors: (color-1: #ff8700, color-2: #4caf50, color-3:#640fc5);
+@each $colorName, $color in $colors {
+  .btn-#{$colorName} {
+    border-radius: 25px;
+    padding: 5px;
+    background-color: $color;
+    border: 2px solid darken($color, 20%);
+    color: invert($color);
 
-@mixin btn($colore) {
-   border-radius: 25px;
-   padding: 5px;
-   background-color: $colore;
-   border: 2px solid darken($colore, 20%);
-   color: invert($colore);
-   &:active{
-      background-color: darken($colore, 20%);
+    &:active {
+      background-color: darken($color, 20%);
       transform: scale(1.2);
- }}
+    }
+  }
+}

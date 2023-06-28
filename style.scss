@@ -56,17 +56,6 @@ section {
   background-color: lighten($bg-hero-color, 25%);
   padding: 1%;
 
-  .btn-1 {
-    @include btn($button-color1);
-  }
-
-  .btn-2 {
-    @include btn($button-color2);
-  }
-
-  .btn-3 {
-    @include btn($button-color3);
-  }
 }
 
 .grid {

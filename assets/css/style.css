@@ -6,6 +6,42 @@ a {
   text-decoration: none;
 }
 
+.btn-color-1 {
+  border-radius: 25px;
+  padding: 5px;
+  background-color: #ff8700;
+  border: 2px solid #995100;
+  color: #0078ff;
+}
+.btn-color-1:active {
+  background-color: #995100;
+  transform: scale(1.2);
+}
+
+.btn-color-2 {
+  border-radius: 25px;
+  padding: 5px;
+  background-color: #4caf50;
+  border: 2px solid #2d682f;
+  color: #b350af;
+}
+.btn-color-2:active {
+  background-color: #2d682f;
+  transform: scale(1.2);
+}
+
+.btn-color-3 {
+  border-radius: 25px;
+  padding: 5px;
+  background-color: #640fc5;
+  border: 2px solid #340866;
+  color: #9bf03a;
+}
+.btn-color-3:active {
+  background-color: #340866;
+  transform: scale(1.2);
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -75,39 +111,6 @@ section {
   gap: unset;
   background-color: #a561f3;
   padding: 1%;
-}
-section .btn-1 {
-  border-radius: 25px;
-  padding: 5px;
-  background-color: #0e6cff;
-  border: 2px solid #0041a7;
-  color: #f19300;
-}
-section .btn-1:active {
-  background-color: #0041a7;
-  transform: scale(1.2);
-}
-section .btn-2 {
-  border-radius: 25px;
-  padding: 5px;
-  background-color: #ff8700;
-  border: 2px solid #995100;
-  color: #0078ff;
-}
-section .btn-2:active {
-  background-color: #995100;
-  transform: scale(1.2);
-}
-section .btn-3 {
-  border-radius: 25px;
-  padding: 5px;
-  background-color: #4caf50;
-  border: 2px solid #2d682f;
-  color: #b350af;
-}
-section .btn-3:active {
-  background-color: #2d682f;
-  transform: scale(1.2);
 }
 
 .grid {
