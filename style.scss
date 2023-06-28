@@ -3,6 +3,7 @@
 @import "assets/css/partials/res";
 @import "assets/css/partials/buttons";
 @import "assets/css/partials/grid";
+@import "assets/css/partials/animation";
 
 h1 {
   color: $button-color2;
@@ -36,14 +37,17 @@ ul {
   background-color: $bg-hero-color;
   padding: 2%;
   @include flex-config(row, space-evenly, center, unset);
+  @include fadeIn(2s);
 
   img {
     width: 40%;
+    @include fadeIn(5s);
   }
 
   div {
     padding: 0.5% 1.5%;
     color: $text-white;
+    @include fadeIn(5s);
   }
 }
 
@@ -67,7 +71,7 @@ section {
 
 .grid {
   @include grid-config(2, 0);
-  padding:  5% 10%;
+  padding: 5% 10%;
 
   img {
     width: 100%;
